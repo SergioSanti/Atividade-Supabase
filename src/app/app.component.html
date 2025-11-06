@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="card" style="text-align: center; margin-bottom: 30px;">
+    <h1>Crud Itens - Supabase e Angular</h1>
+    <p style="color: #718096; margin-top: 10px;">Gerencie seus itens de forma simples e eficiente</p>
+  </div>
+
+  <app-item-form 
+    [item]="currentItem" 
+    (itemSaved)="onItemSaved()">
+  </app-item-form>
+
+  <app-item-list></app-item-list>
+</div>
+
